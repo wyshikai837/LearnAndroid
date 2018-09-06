@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".lifecycler.LifeCyclerActivity"></activity>
+        <activity android:name=".lifecycler.NormalActivity" />
+        <activity android:name=".lifecycler.DialogActivity"
+            android:theme="@android:style/Theme.Dialog"></activity>
     </application>
 
 </manifest>
