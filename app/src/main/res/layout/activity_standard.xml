@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sky.learnandroid.lauchmode.StandardActivity">
+
+    <Button
+        android:id="@+id/btn_start_single_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Single Top"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btn_start_single_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Single Task"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_single_top"/>
+
+    <Button
+        android:id="@+id/btn_start_single_instance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Single Instance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_single_task"/>
+
+</android.support.constraint.ConstraintLayout>

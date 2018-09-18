@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sky.learnandroid.aboutview.MoveWithFingerActivity">
+
+    <Button
+        android:id="@+id/btn_start_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Start Scroll" />
+    
+    <view
+        class="com.sky.learnandroid.aboutview.MoveWithFingerView"
+        android:id="@+id/move_with_finger_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:text="test"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_scroll"/>
+
+</android.support.constraint.ConstraintLayout>

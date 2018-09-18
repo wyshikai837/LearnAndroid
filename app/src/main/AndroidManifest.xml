@@ -16,11 +16,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".lifecycler.LifeCyclerActivity"></activity>
+        <activity android:name=".lifecycler.LifeCyclerActivity" />
         <activity android:name=".lifecycler.NormalActivity" />
-        <activity android:name=".lifecycler.DialogActivity"
-            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".lifecycler.DialogActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".lauchmode.LauchModeActivity" />
+        <activity
+            android:name=".lauchmode.StandardActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".lauchmode.SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".lauchmode.SingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".lauchmode.SingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".aboutview.AboutViewActivity" />
+        <activity android:name=".aboutview.ViewPropsActivity" />
+        <activity android:name=".aboutview.MoveWithFingerActivity" />
+        <activity android:name=".IPC.IPCMainActivity"></activity>
     </application>
 
 </manifest>
