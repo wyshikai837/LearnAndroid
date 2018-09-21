@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sky.learnandroid">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -37,7 +39,14 @@
         <activity android:name=".aboutview.AboutViewActivity" />
         <activity android:name=".aboutview.ViewPropsActivity" />
         <activity android:name=".aboutview.MoveWithFingerActivity" />
-        <activity android:name=".IPC.IPCMainActivity"></activity>
+        <activity android:name=".IPC.IPCMainActivity" />
+        <activity
+            android:name=".IPC.Remote1Activity"
+            android:process=":remote1" />
+        <activity
+            android:name=".IPC.Remote2Activity"
+            android:process="com.sky.learnandroid.remote2" />
+        <activity android:name=".webview.WebViewActivity"></activity>
     </application>
 
 </manifest>

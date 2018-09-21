@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sky.learnandroid.IPC.IPCMainActivity">
+    tools:context="com.sky.learnandroid.IPC.Remote1Activity">
 
     <Button
-        android:id="@+id/btn_start_remote1"
+        android:id="@+id/btn_start_remote2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Remote1" />
+        android:text="Start Remote2" />
 
 </android.support.constraint.ConstraintLayout>

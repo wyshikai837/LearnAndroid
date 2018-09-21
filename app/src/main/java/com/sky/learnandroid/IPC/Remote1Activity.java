@@ -8,24 +8,24 @@ import android.view.View;
 
 import com.sky.learnandroid.R;
 
-public class IPCMainActivity extends AppCompatActivity {
+public class Remote1Activity extends AppCompatActivity {
 
-    public static void startIPCMainActivity(Activity activity) {
-        Intent intent = new Intent(activity, IPCMainActivity.class);
+    public static void startRemote1Activity(Activity activity) {
+        Intent intent = new Intent(activity, Remote1Activity.class);
         activity.startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ipcmain);
+        setContentView(R.layout.activity_remote1);
 
-        setTitle("IPCMainActivity");
+        setTitle("Remote1Activity");
 
-        findViewById(R.id.btn_start_remote1).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_start_remote2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Remote1Activity.startRemote1Activity(IPCMainActivity.this);
+                Remote2Activity.startRemote2Activity(Remote1Activity.this);
             }
         });
     }

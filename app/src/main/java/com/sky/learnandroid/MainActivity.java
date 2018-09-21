@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.sky.learnandroid.IPC.IPCMainActivity;
 import com.sky.learnandroid.aboutview.AboutViewActivity;
 import com.sky.learnandroid.adapter.SimpleAdapter;
 import com.sky.learnandroid.lauchmode.LauchModeActivity;
 import com.sky.learnandroid.lifecycler.LifeCyclerActivity;
+import com.sky.learnandroid.webview.WebViewActivity;
 
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
             "LifeCycler",
             "LaunchMode",
             "AboutView",
-            "IPC");
+            "IPC",
+            "WebView");
 
     private RecyclerView mRvLearnList;
     private SimpleAdapter mAdapter;
@@ -48,7 +51,10 @@ public class MainActivity extends AppCompatActivity {
                         AboutViewActivity.startAboutViewActivity(MainActivity.this);
                         break;
                     case 3:
-
+                        IPCMainActivity.startIPCMainActivity(MainActivity.this);
+                        break;
+                    case 4:
+                        WebViewActivity.startWebViewActivity(MainActivity.this);
                         break;
 
                 }
