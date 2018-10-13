@@ -10,6 +10,7 @@ import com.sky.learnandroid.aboutview.AboutViewActivity;
 import com.sky.learnandroid.adapter.SimpleAdapter;
 import com.sky.learnandroid.lauchmode.LauchModeActivity;
 import com.sky.learnandroid.lifecycler.LifeCyclerActivity;
+import com.sky.learnandroid.service.ServiceMainActivity;
 import com.sky.learnandroid.webview.WebViewActivity;
 
 import java.util.Arrays;
@@ -23,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
             "LaunchMode",
             "AboutView",
             "IPC",
-            "WebView");
+            "WebView",
+            "Service");
 
     private RecyclerView mRvLearnList;
     private SimpleAdapter mAdapter;
@@ -55,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 4:
                         WebViewActivity.startWebViewActivity(MainActivity.this);
+                        break;
+                    case 5:
+                        ServiceMainActivity.startServiceMainActivity(MainActivity.this);
                         break;
 
                 }

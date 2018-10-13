@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sky.learnandroid">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -46,7 +46,20 @@
         <activity
             android:name=".IPC.Remote2Activity"
             android:process="com.sky.learnandroid.remote2" />
-        <activity android:name=".webview.WebViewActivity"></activity>
+        <activity android:name=".webview.WebViewActivity" />
+        <activity android:name=".service.ServiceMainActivity" />
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sky.service.MyService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".service.AnotherBindServiceActivity" />
+        <activity android:name=".aboutview.ScrollViewActivity"></activity>
     </application>
 
 </manifest>

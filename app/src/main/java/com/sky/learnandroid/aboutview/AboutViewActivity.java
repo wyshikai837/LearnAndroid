@@ -25,7 +25,10 @@ public class AboutViewActivity extends AppCompatActivity {
         activity.startActivity(intent);
     }
 
-    private final static List<String> ABOUT_VIEW_LIST = Arrays.asList("View props", "Move with finger");
+    private final static List<String> ABOUT_VIEW_LIST = Arrays.asList(
+            "View props",
+            "Move with finger",
+            "ScrollView");
 
     private RecyclerView mRvAboutView;
     private SimpleAdapter mAdapter;
@@ -49,6 +52,9 @@ public class AboutViewActivity extends AppCompatActivity {
                         break;
                     case 1:
                         MoveWithFingerActivity.startMoveWithFingerActivity(AboutViewActivity.this);
+                        break;
+                    case 2:
+                        ScrollViewActivity.startScrollViewActivity(AboutViewActivity.this);
                         break;
                 }
             }
