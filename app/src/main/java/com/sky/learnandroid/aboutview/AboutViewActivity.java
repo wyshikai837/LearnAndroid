@@ -2,18 +2,13 @@ package com.sky.learnandroid.aboutview;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.sky.learnandroid.R;
 import com.sky.learnandroid.adapter.SimpleAdapter;
-import com.sky.learnandroid.lauchmode.LauchModeActivity;
-import com.sky.learnandroid.lauchmode.SingleInstanceActivity;
-import com.sky.learnandroid.lauchmode.SingleTaskActivity;
-import com.sky.learnandroid.lauchmode.SingleTopActivity;
-import com.sky.learnandroid.lauchmode.StandardActivity;
 
 import java.util.Arrays;
 import java.util.List;

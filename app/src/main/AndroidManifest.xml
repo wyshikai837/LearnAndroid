@@ -3,6 +3,7 @@
     package="com.sky.learnandroid">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".jetpack.viewbinding.ClickMeActivity"></activity>
+        <activity android:name=".jetpack.livedata.TestLiveDataActivity" />
+        <activity android:name=".jetpack.databinding.TestDataBindingActivity" />
+        <activity android:name=".jetpack.JetpackActivity" />
+        <activity android:name=".architecture.NoArchitectureActivity" />
+        <activity android:name=".architecture.mvvm.MvvmActivity" />
+        <activity android:name=".architecture.mvp.MvpActivity" />
+        <activity android:name=".architecture.mvc.MvcActivity" />
+        <activity android:name=".architecture.ArchitectureActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,7 +69,7 @@
         </service>
 
         <activity android:name=".service.AnotherBindServiceActivity" />
-        <activity android:name=".aboutview.ScrollViewActivity"></activity>
+        <activity android:name=".aboutview.ScrollViewActivity" />
     </application>
 
 </manifest>

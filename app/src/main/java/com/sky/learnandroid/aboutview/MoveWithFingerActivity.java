@@ -1,17 +1,12 @@
 package com.sky.learnandroid.aboutview;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 
-import com.nineoldandroids.view.ViewHelper;
 import com.sky.learnandroid.R;
 
 public class MoveWithFingerActivity extends AppCompatActivity {
