@@ -45,37 +45,37 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.d(TAG, "service trace --> onCreate " + this);
+        Log.d(TAG, "---> service trace --> onCreate " + this);
         mBinder = new MyBinder();
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.d(TAG, "service trace --> onStartCommand " + this);
+        Log.d(TAG, "---> service trace --> onStartCommand " + this);
         return super.onStartCommand(intent, flags, startId);
     }
 
     @Override
     public IBinder onBind(Intent intent) {
-        Log.d(TAG, "service trace --> onBind " + this);
+        Log.d(TAG, "---> service trace --> onBind " + this);
         return mBinder;
     }
 
     @Override
     public void onRebind(Intent intent) {
         super.onRebind(intent);
-        Log.d(TAG, "service trace --> onRebind " + this);
+        Log.d(TAG, "---> service trace --> onRebind " + this);
     }
 
     @Override
     public boolean onUnbind(Intent intent) {
-        Log.d(TAG, "service trace --> onUnbind " + this);
+        Log.d(TAG, "---> service trace --> onUnbind " + this);
         return super.onUnbind(intent);
     }
 
     @Override
     public void onDestroy() {
-        Log.d(TAG, "service trace --> onDestroy " + this);
+        Log.d(TAG, "---> service trace --> onDestroy " + this);
         super.onDestroy();
     }
 

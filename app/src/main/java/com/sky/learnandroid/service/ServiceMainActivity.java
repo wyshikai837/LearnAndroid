@@ -32,7 +32,7 @@ public class ServiceMainActivity extends AppCompatActivity {
         findViewById(R.id.btn_start_service).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "service trace --> start service");
+                Log.d(TAG, "---> service trace --> start service");
                 MyService.startMyService(ServiceMainActivity.this);
             }
         });
@@ -40,7 +40,7 @@ public class ServiceMainActivity extends AppCompatActivity {
         findViewById(R.id.btn_stop_service).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "service trace --> stop service");
+                Log.d(TAG, "---> service trace --> stop service");
                 MyService.stopMyService(ServiceMainActivity.this);
             }
         });
@@ -48,7 +48,7 @@ public class ServiceMainActivity extends AppCompatActivity {
         findViewById(R.id.btn_bind_service).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "service trace --> bind service");
+                Log.d(TAG, "---> service trace --> bind service");
                 Intent intent = new Intent(ServiceMainActivity.this, MyService.class);
                 bindService(intent, serviceConnection, BIND_AUTO_CREATE);
             }
@@ -58,7 +58,7 @@ public class ServiceMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (null != mService) {
-                    Log.d(TAG, "service trace --> sum = " + mService.getSum());
+                    Log.d(TAG, "---> service trace --> sum = " + mService.getSum());
                 }
             }
         });
@@ -66,7 +66,7 @@ public class ServiceMainActivity extends AppCompatActivity {
         findViewById(R.id.btn_unbind_service).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "service trace --> unbind service");
+                Log.d(TAG, "---> service trace --> unbind service");
                 if (binded) {
                     unbindService(serviceConnection);
                     binded = false;
@@ -78,7 +78,7 @@ public class ServiceMainActivity extends AppCompatActivity {
         findViewById(R.id.btn_start_another_act_to_bind).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "service trace --> start another activity to bind");
+                Log.d(TAG, "---> service trace --> start another activity to bind");
                 AnotherBindServiceActivity.startAnotherBindServiceActivity(ServiceMainActivity.this);
             }
         });

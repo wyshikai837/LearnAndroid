@@ -35,19 +35,19 @@ public class MoveWithFingerView extends AppCompatTextView {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.d(TAG, "onTouchEvent");
+        Log.d(TAG, "---> onTouchEvent");
         int x = (int) event.getRawX();
         int y = (int) event.getRawY();
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.d(TAG, "ACTION_DOWN");
+                Log.d(TAG, "---> ACTION_DOWN");
                 break;
 
             case MotionEvent.ACTION_MOVE:
-                Log.d(TAG, "ACTION_MOVE");
+                Log.d(TAG, "---> ACTION_MOVE");
                 int deltaX = x - mLastX;
                 int deltaY = y - mLastY;
-                Log.d(TAG, "move, deltaX:" + deltaX + " deltaY:" + deltaY);
+                Log.d(TAG, "---> move, deltaX:" + deltaX + " deltaY:" + deltaY);
                 int translationX = (int) ViewHelper.getTranslationX(this) + deltaX;
                 int translationY = (int) ViewHelper.getTranslationY(this) + deltaY;
                 ViewHelper.setTranslationX(this, translationX);
@@ -55,7 +55,7 @@ public class MoveWithFingerView extends AppCompatTextView {
                 break;
 
             case MotionEvent.ACTION_UP:
-                Log.d(TAG, "ACTION_UP");
+                Log.d(TAG, "---> ACTION_UP");
                 break;
         }
 
@@ -75,10 +75,10 @@ public class MoveWithFingerView extends AppCompatTextView {
     @Override
     public void computeScroll() {
         super.computeScroll();
-        Log.d(TAG, "computeScroll");
+        Log.d(TAG, "---> computeScroll");
 
         if (mScroller.computeScrollOffset()) {
-            Log.d(TAG, "currX=" + mScroller.getCurrX());
+            Log.d(TAG, "---> currX=" + mScroller.getCurrX());
             scrollTo(mScroller.getCurrX(), mScroller.getCurrY());
             postInvalidate();
         }

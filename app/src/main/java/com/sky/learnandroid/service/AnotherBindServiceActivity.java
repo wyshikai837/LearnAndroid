@@ -32,7 +32,7 @@ public class AnotherBindServiceActivity extends AppCompatActivity {
         findViewById(R.id.btn_bind_service).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "service trace --> bind service");
+                Log.d(TAG, "---> service trace --> bind service");
                 Intent intent = new Intent(AnotherBindServiceActivity.this, MyService.class);
                 bindService(intent, serviceConnection, BIND_AUTO_CREATE);
             }
@@ -42,7 +42,7 @@ public class AnotherBindServiceActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (null != mService) {
-                    Log.d(TAG, "service trace --> sum = " + mService.getSum());
+                    Log.d(TAG, "---> service trace --> sum = " + mService.getSum());
                 }
             }
         });
@@ -50,7 +50,7 @@ public class AnotherBindServiceActivity extends AppCompatActivity {
         findViewById(R.id.btn_unbind_service).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "service trace --> unbind service");
+                Log.d(TAG, "---> service trace --> unbind service");
                 if (binded) {
                     unbindService(serviceConnection);
                     binded = false;

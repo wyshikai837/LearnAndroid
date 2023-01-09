@@ -36,16 +36,16 @@ public class ViewPropsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mTvText.scrollTo(-40, 0);
 
-                Log.d(TAG, "left = " + mTvText.getLeft());
-                Log.d(TAG, "x = " + mTvText.getX());
-                Log.d(TAG, "translationX = " + mTvText.getTranslationX());
-                Log.d(TAG, "scrollX = " + mTvText.getScrollX());
+                Log.d(TAG, "---> left = " + mTvText.getLeft());
+                Log.d(TAG, "---> x = " + mTvText.getX());
+                Log.d(TAG, "---> translationX = " + mTvText.getTranslationX());
+                Log.d(TAG, "---> scrollX = " + mTvText.getScrollX());
 
 
-                Log.d(TAG, "top = " + mTvText.getTop());
-                Log.d(TAG, "y = " + mTvText.getY());
-                Log.d(TAG, "translationY = " + mTvText.getTranslationY());
-                Log.d(TAG, "scrollY = " + mTvText.getScrollY());
+                Log.d(TAG, "---> top = " + mTvText.getTop());
+                Log.d(TAG, "---> y = " + mTvText.getY());
+                Log.d(TAG, "---> translationY = " + mTvText.getTranslationY());
+                Log.d(TAG, "---> scrollY = " + mTvText.getScrollY());
             }
         });
     }
