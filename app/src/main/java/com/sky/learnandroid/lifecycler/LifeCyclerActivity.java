@@ -2,7 +2,9 @@ package com.sky.learnandroid.lifecycler;
 
 import android.app.Activity;
 import android.content.Intent;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -34,6 +36,7 @@ public class LifeCyclerActivity extends AppCompatActivity {
 
         Button startNormalActivity = (Button) findViewById(R.id.start_normal_activity);
         Button startDialogActivity = (Button) findViewById(R.id.start_dialog_activity);
+        Button startFragmentActivity = (Button) findViewById(R.id.start_fragment_activity);
 
         startNormalActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +51,13 @@ public class LifeCyclerActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(LifeCyclerActivity.this, DialogActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        startFragmentActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TestFragmentActivity.startActivity(LifeCyclerActivity.this);
             }
         });
     }

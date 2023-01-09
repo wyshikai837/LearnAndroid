@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".jetpack.viewbinding.ClickMeActivity"></activity>
+        <activity
+            android:name=".lifecycler.TestFragmentActivity"
+            android:exported="false" />
+        <activity android:name=".jetpack.viewbinding.ClickMeActivity" />
         <activity android:name=".jetpack.livedata.TestLiveDataActivity" />
         <activity android:name=".jetpack.databinding.TestDataBindingActivity" />
         <activity android:name=".jetpack.JetpackActivity" />
