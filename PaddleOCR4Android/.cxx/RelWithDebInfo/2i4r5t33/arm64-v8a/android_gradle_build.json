@@ -1,0 +1,42 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/sky/Downloads/paddleocr4android-master/PaddleOCR4Android/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/sky/Documents/andriod/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/sky/Downloads/paddleocr4android-master/PaddleOCR4Android/.cxx/RelWithDebInfo/2i4r5t33/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/sky/Documents/andriod/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/sky/Downloads/paddleocr4android-master/PaddleOCR4Android/.cxx/RelWithDebInfo/2i4r5t33/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Native-RelWithDebInfo-arm64-v8a": {
+      "buildCommandComponents": [
+        "/Users/sky/Documents/andriod/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/sky/Downloads/paddleocr4android-master/PaddleOCR4Android/.cxx/RelWithDebInfo/2i4r5t33/arm64-v8a",
+        "Native"
+      ],
+      "buildType": "release",
+      "abi": "arm64-v8a",
+      "artifactName": "Native",
+      "output": "/Users/sky/Downloads/paddleocr4android-master/PaddleOCR4Android/build/intermediates/cxx/RelWithDebInfo/2i4r5t33/obj/arm64-v8a/libNative.so",
+      "runtimeFiles": [
+        "/Users/sky/Downloads/paddleocr4android-master/PaddleOCR4Android/PaddleLite/cxx/libs/arm64-v8a/libpaddle_light_api_shared.so"
+      ]
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

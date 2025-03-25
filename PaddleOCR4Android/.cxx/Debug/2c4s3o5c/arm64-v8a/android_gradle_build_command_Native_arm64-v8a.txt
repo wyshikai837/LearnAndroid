@@ -1,0 +1,7 @@
+Executable : /Users/sky/Documents/andriod/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/sky/Documents/andriod/workspace/LearnAndroid/PaddleOCR4Android/.cxx/Debug/2c4s3o5c/arm64-v8a
+Native
+jvmArgs : 
+

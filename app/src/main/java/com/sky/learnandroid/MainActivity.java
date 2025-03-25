@@ -6,6 +6,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -18,6 +20,7 @@ import com.sky.learnandroid.architecture.ArchitectureActivity;
 import com.sky.learnandroid.jetpack.JetpackActivity;
 import com.sky.learnandroid.lauchmode.LauchModeActivity;
 import com.sky.learnandroid.lifecycler.LifeCyclerActivity;
+import com.sky.learnandroid.paddleocr.TestPaddleOcrActivityivity;
 import com.sky.learnandroid.service.ServiceMainActivity;
 import com.sky.learnandroid.webview.WebViewActivity;
 
@@ -25,6 +28,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MainActivity";
 
 
     private final static List<String> learnListStrs = Arrays.asList(
@@ -35,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
             "WebView",
             "Service",
             "Architecture",
-            "Jetpack");
+            "Jetpack",
+            "PaddleOcr");
 
     private RecyclerView mRvLearnList;
     private SimpleAdapter mAdapter;
@@ -76,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 7:
                         JetpackActivity.startActivity(MainActivity.this);
+                        break;
+                    case 8:
+                        TestPaddleOcrActivityivity.startActivity(MainActivity.this);
                         break;
                 }
             }

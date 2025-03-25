@@ -73,4 +73,10 @@ public class TestFragment extends Fragment {
         super.onDestroy();
         Log.d(TAG, "---> onDestroy");
     }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        Log.d(TAG, "---> onDetach");
+    }
 }

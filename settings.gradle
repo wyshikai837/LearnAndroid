@@ -1,1 +1,3 @@
 include ':app'
+include ':HiScanTestDecodeSDKDemo'
+include ':PaddleOCR4Android'

@@ -1,0 +1,3 @@
+/Users/sky/Documents/andriod/workspace/LearnAndroid/PaddleOCR4Android/.cxx/Debug/2c4s3o5c/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/sky/Documents/andriod/workspace/LearnAndroid/PaddleOCR4Android/.cxx/Debug/2c4s3o5c/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/sky/Documents/andriod/workspace/LearnAndroid/PaddleOCR4Android/.cxx/Debug/2c4s3o5c/arm64-v8a/CMakeFiles/Native.dir

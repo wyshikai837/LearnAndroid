@@ -1,0 +1,13 @@
+# ninja log v5
+0	7	0	clean	6320e5a88120357f
+3	1656	1742805589	CMakeFiles/Native.dir/predictor_input.cpp.o	4d6f93b5c53f1bae
+4	1658	1742805589	CMakeFiles/Native.dir/predictor_output.cpp.o	b3d39fd353e282ee
+2	2201	1742805589	CMakeFiles/Native.dir/ppredictor.cpp.o	94f2217bf8012ad2
+2	3716	1742805591	CMakeFiles/Native.dir/ocr_db_post_process.cpp.o	c9ad02b7ce69a6e
+1	3950	1742805591	CMakeFiles/Native.dir/ocr_clipper.cpp.o	73e0fdb91bec456f
+5	4617	1742805592	CMakeFiles/Native.dir/preprocess.cpp.o	e0a785983f4bb3ee
+1	4785	1742805592	CMakeFiles/Native.dir/ocr_cls_process.cpp.o	9ec07ad783e0988d
+1	4852	1742805592	CMakeFiles/Native.dir/ocr_crnn_process.cpp.o	e4a32b6f3b1a4324
+0	4993	1742805592	CMakeFiles/Native.dir/native.cpp.o	91eee515161d71aa
+2	5087	1742805592	CMakeFiles/Native.dir/ocr_ppredictor.cpp.o	2fa71561166ab14
+5087	6041	1742805593	/Users/sky/Documents/andriod/workspace/LearnAndroid/PaddleOCR4Android/build/intermediates/cxx/Debug/2c4s3o5c/obj/arm64-v8a/libNative.so	d7e9234fa19e921a
